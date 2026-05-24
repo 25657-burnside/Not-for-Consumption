@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dbu2wrw6u6bsk"]
+
+[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://icon.svg" id="1_dugu8"]
+
+[node name="endgame" type="Node2D" unique_id=1191267765]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1368457334]
+position = Vector2(576, 584)
+scale = Vector2(8.9375, 1)
+texture = ExtResource("1_dugu8")
