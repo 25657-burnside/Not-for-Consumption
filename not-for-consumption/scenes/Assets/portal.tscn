@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://buq8yelii7ume"]
+
+[ext_resource type="Script" uid="uid://dlte07gu70b40" path="res://scripts/portal.gd" id="1_2bavj"]
+[ext_resource type="Texture2D" uid="uid://p2ee6nwjnl3e" path="res://New Piskel.png" id="2_b8o3x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yypjn"]
+size = Vector2(64, 64)
+
+[node name="Portal 1" type="Area2D" unique_id=1477204429]
+script = ExtResource("1_2bavj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1545500507]
+texture = ExtResource("2_b8o3x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1409850592]
+shape = SubResource("RectangleShape2D_yypjn")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
