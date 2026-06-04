@@ -3,12 +3,30 @@
 [ext_resource type="PackedScene" uid="uid://5py1tlj85w50" path="res://scenes/Assets/player.tscn" id="1_1r4ax"]
 [ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://icon.svg" id="2_vj6it"]
 [ext_resource type="PackedScene" uid="uid://buq8yelii7ume" path="res://scenes/Assets/portal.tscn" id="3_vj6it"]
+[ext_resource type="Texture2D" uid="uid://c5q5f3er1idk0" path="res://scenes/Assets/Sprite sheet.png" id="4_2kdxr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rus8k"]
 size = Vector2(1160, 128)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bswci"]
 size = Vector2(1144, 128)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnb2c"]
+texture = ExtResource("4_2kdxr")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_h8v3o"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_tnb2c")
 
 [node name="Level 1" type="Node2D" unique_id=403267996]
 
@@ -44,3 +62,8 @@ shape = SubResource("RectangleShape2D_bswci")
 
 [node name="Portal" parent="." unique_id=1477204429 instance=ExtResource("3_vj6it")]
 position = Vector2(376, 472)
+
+[node name="TileMap" type="TileMap" parent="." unique_id=585165257]
+tile_set = SubResource("TileSet_h8v3o")
+format = 2
+layer_0/tile_data = PackedInt32Array(2162689, 0, 0, 2162693, 65536, 0, 2162697, 65536, 0, 2162701, 65536, 0, 2162705, 65536, 0, 2162709, 65536, 0, 2162713, 65536, 0, 2162717, 65536, 0, 2162721, 65536, 0, 2162725, 65536, 0, 2162729, 65536, 0, 2162733, 65536, 0, 2162737, 65536, 0, 2162741, 65536, 0, 2162745, 65536, 0, 2162749, 65536, 0, 2162753, 65536, 0, 2162757, 131072, 0, 2424833, 0, 2, 2424837, 65536, 2, 2424841, 65536, 2, 2424845, 65536, 2, 2424849, 65536, 2, 2424853, 65536, 2, 2424857, 65536, 2, 2424861, 65536, 2, 2424865, 65536, 2, 2424869, 65536, 2, 2424873, 65536, 2, 2424877, 65536, 2, 2424881, 65536, 2, 2424885, 65536, 2, 2424889, 65536, 2, 2424893, 65536, 2, 2424897, 65536, 2, 2424901, 131072, 2, 1441845, 65536, 1, 1441849, 65536, 1, 1441853, 65536, 1, 1441861, 65536, 1, 1441862, 65536, 1, 1441863, 65536, 1, 1441864, 65536, 1, 1441865, 65536, 1, 1441866, 65536, 1, 1441867, 65536, 1, 1441868, 65536, 1, 1441869, 65536, 1, 1441870, 65536, 1, 327687, 65536, 1, 327688, 65536, 1, 327689, 65536, 1, 327690, 65536, 1, 327691, 65536, 1, 327692, 65536, 1, 327693, 65536, 1, 327694, 65536, 1, 262150, 0, 0, 262151, 65536, 0, 262152, 65536, 0, 262153, 65536, 0, 262154, 65536, 0, 262155, 65536, 0, 262156, 65536, 0, 262157, 65536, 0, 262158, 65536, 0, 262159, 131072, 0)
