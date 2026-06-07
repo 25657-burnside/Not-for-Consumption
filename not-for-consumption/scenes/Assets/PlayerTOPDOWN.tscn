@@ -4,18 +4,21 @@
 [ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://icon.svg" id="2_134c8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gbbil"]
-size = Vector2(128, 128)
+size = Vector2(48, 48)
 
 [node name="PlayerTOPDOWN" type="CharacterBody2D" unique_id=146099960]
 script = ExtResource("1_klau0")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=193813488]
+position = Vector2(7.6293945e-06, 7.6293945e-06)
+scale = Vector2(0.37499997, 0.37499997)
 texture = ExtResource("2_134c8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=751626952]
 shape = SubResource("RectangleShape2D_gbbil")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1465953030]
-zoom = Vector2(1.07, 1.07)
+position = Vector2(0, -8)
+zoom = Vector2(2.215, 2.215)
 position_smoothing_enabled = true
 position_smoothing_speed = 5.585

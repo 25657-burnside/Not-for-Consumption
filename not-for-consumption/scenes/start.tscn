@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bkknmmd56ugt7"]
+
+[ext_resource type="Texture2D" uid="uid://d1bemu8hhyimn" path="res://game start button.PNG" id="1_jaeev"]
+[ext_resource type="Texture2D" uid="uid://jcioh6mpfjs8" path="res://game start loading screen.PNG" id="1_u80x2"]
+
+[node name="Node2D" type="Node2D" unique_id=1278065312]
+
+[node name="GameStartLoadingScreen" type="Sprite2D" parent="." unique_id=180383503]
+position = Vector2(584.00006, 304)
+scale = Vector2(2.5743241, 2.491546)
+texture = ExtResource("1_u80x2")
+
+[node name="Button" type="Button" parent="." unique_id=2018858911]
+offset_left = 232.0
+offset_top = 432.0
+offset_right = 472.0
+offset_bottom = 528.0
+text = "
+"
+icon = ExtResource("1_jaeev")
+expand_icon = true

@@ -1,93 +1,13 @@
 [gd_scene format=3 uid="uid://cl8eplq4ebf6d"]
 
-[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://icon.svg" id="1_kphl1"]
 [ext_resource type="PackedScene" uid="uid://c6p0job5q18ur" path="res://scenes/Assets/PlayerTOPDOWN.tscn" id="2_2bgbl"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2bgbl"]
-size = Vector2(64, 344)
+[ext_resource type="PackedScene" uid="uid://bs0ti2xwqkf5h" path="res://scenes/Assets/tile_map_2.tscn" id="2_augtw"]
 
 [node name="Node2D" type="Node2D" unique_id=632737178]
 
-[node name="Node2D" type="Node2D" parent="." unique_id=822832347]
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="Node2D" unique_id=129708673]
-position = Vector2(480, 416)
-rotation = 1.5707964
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/StaticBody2D3" unique_id=958519858]
-position = Vector2(-32, 112)
-scale = Vector2(0.4375, 2.6875)
-texture = ExtResource("1_kphl1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/StaticBody2D3" unique_id=978015667]
-position = Vector2(-32, 112)
-shape = SubResource("RectangleShape2D_2bgbl")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="Node2D" unique_id=9332614]
-position = Vector2(384, 8)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/StaticBody2D2" unique_id=1901784310]
-position = Vector2(-32, 112)
-scale = Vector2(0.4375, 2.6875)
-texture = ExtResource("1_kphl1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/StaticBody2D2" unique_id=699340925]
-position = Vector2(-32, 112)
-shape = SubResource("RectangleShape2D_2bgbl")
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="Node2D" unique_id=595111634]
-position = Vector2(672, 304)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/StaticBody2D4" unique_id=1697197844]
-position = Vector2(-40, 112)
-scale = Vector2(0.4375, 2.6875)
-texture = ExtResource("1_kphl1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/StaticBody2D4" unique_id=64391078]
-position = Vector2(-39.999992, 111.99999)
-shape = SubResource("RectangleShape2D_2bgbl")
-
-[node name="StaticBody2D5" type="StaticBody2D" parent="Node2D" unique_id=1669631218]
-position = Vector2(608, 360)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/StaticBody2D5" unique_id=1737928830]
-position = Vector2(-32, 112)
-scale = Vector2(0.4375, 2.6875)
-texture = ExtResource("1_kphl1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/StaticBody2D5" unique_id=782871570]
-position = Vector2(-32, 112)
-shape = SubResource("RectangleShape2D_2bgbl")
-
-[node name="StaticBody2D6" type="StaticBody2D" parent="Node2D" unique_id=78594511]
-position = Vector2(256, 8)
-rotation = 1.5707964
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/StaticBody2D6" unique_id=548931928]
-position = Vector2(-32, 112)
-scale = Vector2(0.4375, 2.6875)
-texture = ExtResource("1_kphl1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/StaticBody2D6" unique_id=1683903385]
-position = Vector2(-32, 112)
-shape = SubResource("RectangleShape2D_2bgbl")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Node2D" unique_id=1238255254]
-position = Vector2(256, 64)
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/StaticBody2D" unique_id=1743862359]
-position = Vector2(-32, 112)
-scale = Vector2(0.4375, 2.6875)
-texture = ExtResource("1_kphl1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/StaticBody2D" unique_id=989663725]
-position = Vector2(-32, 112)
-shape = SubResource("RectangleShape2D_2bgbl")
-
 [node name="PlayerTOPDOWN" parent="." unique_id=146099960 instance=ExtResource("2_2bgbl")]
-position = Vector2(584, 104)
+position = Vector2(672, 104)
+
+[node name="TileMap2" parent="." unique_id=139295078 instance=ExtResource("2_augtw")]
+position = Vector2(445.27295, 980.11365)
+layer_0/tile_data = PackedInt32Array(-983036, 65536, 1, -917500, 65536, 1, -851964, 65536, 1, -786428, 65536, 1, -720892, 65536, 1, -851965, 65536, 1, -851966, 65536, 1, -851967, 65536, 1, -851968, 65536, 1, -917506, 65536, 1, -851970, 65536, 1, -786434, 65536, 1, -720898, 65536, 1, -655362, 65536, 1, -589826, 65536, 1, -720896, 65536, 1, -655360, 65536, 1, -589824, 65536, 1, -524288, 65536, 1610612737, -720895, 65536, 1, -720894, 65536, 1, -589818, 65536, 1610612737, -655354, 65536, 1610612737, -720890, 65536, 1610612737, -786426, 65536, 1610612737, -851962, 65536, 1610612737, -917498, 65536, 1610612737, -983034, 65536, 1610612737, -983042, 65536, 1610612737, -983041, 65536, 1610612737, -1048576, 65536, 1610612737, -1048575, 65536, 1610612737, -1048574, 65536, 1610612737, -1048573, 65536, 1610612737, -1048572, 65536, 1610612737, -1048571, 65536, 1610612737, -1048570, 65536, 1610612737, -458754, 65536, 1610612737, -458753, 65536, 1610612737, -524287, 65536, 1610612737, -524286, 65536, 1610612737, -524285, 65536, 1610612737, -524284, 65536, 1610612737, -524283, 65536, 1610612737, -524282, 65536, 1610612737, -524290, 65536, 1610612737, -983040, 65536, 1610612737, -917502, 65536, 1610612737, -655356, 65536, 1610612737, -655358, 65536, 1610612737)

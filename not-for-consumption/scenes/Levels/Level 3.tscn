@@ -1,28 +1,18 @@
 [gd_scene format=3 uid="uid://dx25mtcsg8qlc"]
 
-[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://icon.svg" id="1_jge86"]
 [ext_resource type="PackedScene" uid="uid://5py1tlj85w50" path="res://scenes/Assets/player.tscn" id="2_3vrfu"]
 [ext_resource type="PackedScene" uid="uid://bbrodeajuqaqj" path="res://scenes/Assets/portal 3.tscn" id="3_3vrfu"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y5r85"]
-size = Vector2(704, 128)
+[ext_resource type="PackedScene" uid="uid://bs0ti2xwqkf5h" path="res://scenes/Assets/tile_map_2.tscn" id="3_y5r85"]
 
 [node name="Node2D" type="Node2D" unique_id=674097940]
 position = Vector2(8, 0)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1586258385]
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=914945801]
-position = Vector2(344, 576)
-scale = Vector2(5.5, 1)
-texture = ExtResource("1_jge86")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=531006774]
-position = Vector2(344, 576)
-shape = SubResource("RectangleShape2D_y5r85")
 
 [node name="player" parent="." unique_id=453147879 instance=ExtResource("2_3vrfu")]
 position = Vector2(344, 472)
 
 [node name="Area2D" parent="." unique_id=230328529 instance=ExtResource("3_3vrfu")]
 position = Vector2(464, 480)
+
+[node name="TileMap2" parent="." unique_id=139295078 instance=ExtResource("3_y5r85")]
+position = Vector2(16, 80)
+layer_0/tile_data = PackedInt32Array(458752, 0, 0, 458753, 65536, 0, 458754, 65536, 0, 458755, 65536, 0, 458756, 131072, 0, 524288, 0, 2, 524292, 131072, 2, 524289, 65536, 2, 524290, 65536, 2, 524291, 65536, 2, 458757, 65536, 0, 458758, 65536, 0, 458759, 65536, 0, 458760, 65536, 0, 458761, 65536, 0, 458762, 65536, 0, 524298, 65536, 0, 524297, 65536, 0, 524296, 65536, 0, 524295, 65536, 0, 524294, 65536, 0, 524293, 65536, 0)
