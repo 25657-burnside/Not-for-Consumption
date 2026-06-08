@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b3qbvicafw37c"]
+
+[ext_resource type="Script" uid="uid://d1tnfb42mc6sp" path="res://scripts/falling tooth.gd" id="1_jmejb"]
+[ext_resource type="Texture2D" uid="uid://p2ee6nwjnl3e" path="res://New Piskel.png" id="2_333oj"]
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=38537933]
+script = ExtResource("1_jmejb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=541514781]
+texture = ExtResource("2_333oj")
