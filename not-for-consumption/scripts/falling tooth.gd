@@ -6,3 +6,4 @@ func _process(delta: float) -> void:
 		var collider = self.get_collider()
 		if collider.name == "player":
 			
+	
