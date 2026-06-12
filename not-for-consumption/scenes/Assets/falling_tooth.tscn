@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d2dbwy2ljqqbx"]
+
+[ext_resource type="Texture2D" uid="uid://p2ee6nwjnl3e" path="res://New Piskel.png" id="1_2funn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pjrxq"]
+radius = 17.0
+height = 56.0
+
+[node name="falling tooth" type="Area2D" unique_id=2046837657]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1282371771]
+texture = ExtResource("1_2funn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=708163311]
+position = Vector2(0, 9)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_pjrxq")
