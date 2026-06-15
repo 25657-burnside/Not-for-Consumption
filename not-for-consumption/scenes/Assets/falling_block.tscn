@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c51pju1n2k8jh"]
+
+[ext_resource type="Script" uid="uid://buswwxnhwtbpl" path="res://scripts/falling_block.gd" id="1_u4enj"]
+[ext_resource type="Texture2D" uid="uid://p2ee6nwjnl3e" path="res://New Piskel.png" id="2_121l0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n3ljx"]
+size = Vector2(56, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcyuk"]
+size = Vector2(40, 464)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u4enj"]
+size = Vector2(46, 5)
+
+[node name="FallingBlock" type="CharacterBody2D" unique_id=168973367]
+script = ExtResource("1_u4enj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2146063375]
+position = Vector2(4, 4)
+scale = Vector2(0.875, 0.875)
+texture = ExtResource("2_121l0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=923836316]
+position = Vector2(4, 14)
+shape = SubResource("RectangleShape2D_n3ljx")
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=584020498]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=1938290298]
+position = Vector2(4, 240)
+shape = SubResource("RectangleShape2D_mcyuk")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1733773949]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1236992458]
+position = Vector2(6, 30)
+shape = SubResource("RectangleShape2D_u4enj")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

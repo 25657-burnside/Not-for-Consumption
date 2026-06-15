@@ -1,5 +1,4 @@
 extends CharacterBody2D
-extends CharacterBody2D
 
 # Get the default gravity from project settings
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -27,4 +26,24 @@ func _physics_process(delta):
 func _on_detection_area_body_entered(body):
 	# Check if the body entering the area is the player
 	if body.is_in_group("player") and not has_fallen:
+		print("ow")
 		is_falling = true
+
+func _on_hitbox_body_entered(body):
+	# 1. Check if the block is actually falling
+	if is_falling:
+		
+		# 2. Check if the thing it crushed is the player
+		if body.is_in_group("player"):
+			print("OWWWW")
+			
+			# 3. Restart the entire current level instantly
+			get_tree().reload_current_scene()
+
+	# Changed 'is_falling' to 'not has_fallen' to beat the physics timing bug!
+	if not has_fallen:
+		
+		# Check if it's the player
+		if body.is_in_group("player"):
+			print("CRUSHED!") # This will show up in your Output log at the bottom
+			get_tree().reload_current_scene()
