@@ -14,7 +14,7 @@ func _ready():
 func _physics_process(delta):
 	# If the trap is triggered, apply gravity
 	if is_falling:
-		velocity.y += gravity * delta
+		velocity.y += gravity * delta * 2 
 		move_and_slide()
 		
 		# Stop falling when it hits the ground or the player
@@ -29,21 +29,22 @@ func _on_detection_area_body_entered(body):
 		print("ow")
 		is_falling = true
 
-func _on_hitbox_body_entered(body):
+
+
+func _on_hitbox_body_entered(body: Node2D) -> void:
 	# 1. Check if the block is actually falling
-	if is_falling:
 		
 		# 2. Check if the thing it crushed is the player
 		if body.is_in_group("player"):
 			print("OWWWW")
 			
-			# 3. Restart the entire current level instantly
+			# 2. Turn off the player's processing so they can't move or take input
+			body.process_mode = Node.PROCESS_MODE_DISABLED
+			
+			# 3. Wait for 2.0 seconds
+			await get_tree().create_timer(2.0).timeout
+			
+			# 4. Reload the scene
 			get_tree().reload_current_scene()
 
-	# Changed 'is_falling' to 'not has_fallen' to beat the physics timing bug!
-	if not has_fallen:
-		
-		# Check if it's the player
-		if body.is_in_group("player"):
-			print("CRUSHED!") # This will show up in your Output log at the bottom
-			get_tree().reload_current_scene()
+#Check gemini for the last message and add that

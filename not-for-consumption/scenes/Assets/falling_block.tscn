@@ -10,7 +10,7 @@ size = Vector2(56, 28)
 size = Vector2(40, 464)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u4enj"]
-size = Vector2(46, 5)
+size = Vector2(48, 5)
 
 [node name="FallingBlock" type="CharacterBody2D" unique_id=168973367]
 script = ExtResource("1_u4enj")
@@ -33,7 +33,7 @@ shape = SubResource("RectangleShape2D_mcyuk")
 [node name="Hitbox" type="Area2D" parent="." unique_id=1733773949]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1236992458]
-position = Vector2(6, 30)
+position = Vector2(5, 30)
 shape = SubResource("RectangleShape2D_u4enj")
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
