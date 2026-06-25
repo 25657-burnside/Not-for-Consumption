@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://c5q5f3er1idk0" path="res://scenes/Assets/Sprite sheet.png" id="1_4bqgd"]
 [ext_resource type="PackedScene" uid="uid://cqowq58x0k84i" path="res://scenes/Assets/portal 2.tscn" id="3_2x4of"]
 [ext_resource type="PackedScene" uid="uid://j61q1yd8yrrs" path="res://scenes/Assets/playerDROPPER.tscn" id="3_h15i8"]
+[ext_resource type="PackedScene" uid="uid://b1tp5bon6fl2w" path="res://scenes/Assets/obstacle_2.tscn" id="5_2x4of"]
+[ext_resource type="Script" uid="uid://j4sehkeu1ggq" path="res://scripts/spawner.gd" id="6_x268y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnb2c"]
 texture = ExtResource("1_4bqgd")
@@ -42,5 +44,12 @@ tile_set = SubResource("TileSet_h8v3o")
 [node name="portal" parent="." unique_id=348463966 instance=ExtResource("3_2x4of")]
 position = Vector2(664, 10224)
 
-[node name="player" parent="." unique_id=1999039877 instance=ExtResource("3_h15i8")]
-position = Vector2(624, 328)
+[node name="player" parent="." unique_id=1999039877 groups=["player"] instance=ExtResource("3_h15i8")]
+position = Vector2(632, 104)
+
+[node name="Obstacle 2" parent="." unique_id=2134004670 instance=ExtResource("5_2x4of")]
+position = Vector2(392, 616)
+
+[node name="Spawner" type="Node2D" parent="." unique_id=1755388281]
+position = Vector2(640, 648)
+script = ExtResource("6_x268y")

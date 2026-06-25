@@ -18,4 +18,7 @@ func _process(delta):
 		position.y -= 5
 	move_and_slide()
 	
-	
+	# Restrict the player's X and Y positions
+	# clamp(value, minimum_limit, maximum_limit)
+	position.x = clamp(position.x, 416.0, 880.0)
+	position.y = clamp(position.y, 32.0, 616)
