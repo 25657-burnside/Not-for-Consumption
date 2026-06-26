@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1bemu8hhyimn"
-path="res://.godot/imported/game start button.PNG-f30cd32ef401d0f2007a3e40753abd41.ctex"
+uid="uid://51xnmc8k6lnt"
+path="res://.godot/imported/icon.svg-964d8c66fbd3bda40c44ca195472a8e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game start button.PNG"
-dest_files=["res://.godot/imported/game start button.PNG-f30cd32ef401d0f2007a3e40753abd41.ctex"]
+source_file="res://sprites/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-964d8c66fbd3bda40c44ca195472a8e1.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

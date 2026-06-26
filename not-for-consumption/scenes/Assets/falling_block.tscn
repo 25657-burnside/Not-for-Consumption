@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c51pju1n2k8jh"]
 
 [ext_resource type="Script" uid="uid://buswwxnhwtbpl" path="res://scripts/falling_block.gd" id="1_u4enj"]
-[ext_resource type="Texture2D" uid="uid://p2ee6nwjnl3e" path="res://New Piskel.png" id="2_121l0"]
+[ext_resource type="Texture2D" uid="uid://p2ee6nwjnl3e" path="res://sprites/New Piskel.png" id="2_121l0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n3ljx"]
 size = Vector2(56, 28)

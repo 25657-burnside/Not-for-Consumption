@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cl8eplq4ebf6d"]
 
-[ext_resource type="PackedScene" uid="uid://c6p0job5q18ur" path="res://scenes/Assets/PlayerTOPDOWN.tscn" id="2_2bgbl"]
+[ext_resource type="PackedScene" uid="uid://c6p0job5q18ur" path="res://scenes/Assets/Players/PlayerTOPDOWN.tscn" id="2_2bgbl"]
 [ext_resource type="PackedScene" uid="uid://bs0ti2xwqkf5h" path="res://scenes/Assets/tile_map_2.tscn" id="2_augtw"]
 
 [node name="Node2D" type="Node2D" unique_id=632737178]

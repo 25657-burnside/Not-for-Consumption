@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b3qbvicafw37c"]
 
-[ext_resource type="Script" uid="uid://d1tnfb42mc6sp" path="res://scripts/falling tooth.gd" id="1_jmejb"]
-[ext_resource type="Texture2D" uid="uid://p2ee6nwjnl3e" path="res://New Piskel.png" id="2_333oj"]
+[ext_resource type="Script" path="res://scripts/falling tooth.gd" id="1_jmejb"]
+[ext_resource type="Texture2D" uid="uid://p2ee6nwjnl3e" path="res://sprites/New Piskel.png" id="2_333oj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jmejb"]
 radius = 15.0

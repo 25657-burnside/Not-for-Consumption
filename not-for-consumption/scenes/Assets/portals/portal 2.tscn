@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cqowq58x0k84i"]
+
+[ext_resource type="Script" uid="uid://ckuj2xsbha5gn" path="res://scripts/Portal Scripts/portal_2.gd" id="1_5r15g"]
+[ext_resource type="Texture2D" uid="uid://dudnpn0c6lmri" path="res://sprites/Untitled.png" id="2_v0j66"]
+[ext_resource type="Texture2D" uid="uid://c4uekqltu82l0" path="res://sprites/square-png.webp" id="3_47kmm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_us4q0"]
+size = Vector2(512, 64)
+
+[node name="Area2D" type="Area2D" unique_id=348463966]
+script = ExtResource("1_5r15g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=246082970]
+position = Vector2(168.00006, -159.99997)
+scale = Vector2(2.4260466, 0.24908428)
+texture = ExtResource("2_v0j66")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1242349647]
+shape = SubResource("RectangleShape2D_us4q0")
+
+[node name="SquarePng" type="Sprite2D" parent="." unique_id=2064572857]
+position = Vector2(163.99994, 446.25)
+scale = Vector2(5.0090747, 2.1842105)
+texture = ExtResource("3_47kmm")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

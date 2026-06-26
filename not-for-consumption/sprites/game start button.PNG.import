@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5q5f3er1idk0"
-path="res://.godot/imported/Sprite sheet.png-1a172db7f98a801cd1f01a7305c72566.ctex"
+uid="uid://v5b1p4w7t6bm"
+path="res://.godot/imported/game start button.PNG-f03871693c43271318e651f13abcf193.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Assets/Sprite sheet.png"
-dest_files=["res://.godot/imported/Sprite sheet.png-1a172db7f98a801cd1f01a7305c72566.ctex"]
+source_file="res://sprites/game start button.PNG"
+dest_files=["res://.godot/imported/game start button.PNG-f03871693c43271318e651f13abcf193.ctex"]
 
 [params]
 

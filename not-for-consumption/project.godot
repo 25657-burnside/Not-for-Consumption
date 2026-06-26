@@ -13,15 +13,20 @@ config_version=5
 config/name="Not for Consumption"
 run/main_scene="uid://bd4al04vgtjen"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://sprites/icon.svg"
 
 [file_customization]
 
 folder_colors={
 "res://scenes/": "purple",
 "res://scenes/Assets/": "red",
+"res://scenes/Assets/Players/": "pink",
+"res://scenes/Assets/portals/": "pink",
 "res://scenes/Levels/": "blue",
-"res://scripts/": "green"
+"res://scripts/": "green",
+"res://scripts/Character Scripts/": "teal",
+"res://scripts/Portal Scripts/": "teal",
+"res://sprites/": "orange"
 }
 
 [input]

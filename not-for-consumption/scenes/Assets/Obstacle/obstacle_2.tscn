@@ -1,7 +1,26 @@
 [gd_scene format=3 uid="uid://b1tp5bon6fl2w"]
 
-[ext_resource type="Script" uid="uid://c6vdqs3kyjiil" path="res://obstacle.gd" id="1_jajvh"]
-[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://icon.svg" id="2_swkfu"]
+[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="2_swkfu"]
+
+[sub_resource type="GDScript" id="GDScript_fwrey"]
+script/source = "extends Area2D
+var fall_speed = 200
+
+func _process(delta):
+	# Move the whole formation down
+	position.y -= fall_speed * delta
+	
+	# If the formation goes past the bottom of the screen (e.g., Y = 800)
+	# Delete it! Once deleted, your Spawner will automatically spawn the next one.
+	if position.y < 32:
+		queue_free()
+func _on_body_entered(body: Node2D) -> void:
+	# Check if the thing that touched us is the player
+	if body.is_in_group(\"player\"):
+		# This deletes the player from the game. 
+		# (Later, you can change this to trigger a game over screen instead!)
+		get_tree().reload_current_scene()
+"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]
 size = Vector2(100, 64)
@@ -10,7 +29,7 @@ size = Vector2(100, 64)
 size = Vector2(64, 224)
 
 [node name="Obstacle 2" type="Area2D" unique_id=1295667444 groups=["player"]]
-script = ExtResource("1_jajvh")
+script = SubResource("GDScript_fwrey")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1109688378]
 position = Vector2(56, -80)

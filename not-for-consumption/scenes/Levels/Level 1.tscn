@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bd4al04vgtjen"]
 
 [ext_resource type="PackedScene" uid="uid://5py1tlj85w50" path="res://scenes/Assets/player.tscn" id="1_1r4ax"]
-[ext_resource type="PackedScene" uid="uid://buq8yelii7ume" path="res://scenes/Assets/portal.tscn" id="3_vj6it"]
+[ext_resource type="PackedScene" uid="uid://buq8yelii7ume" path="res://scenes/Assets/portals/portal.tscn" id="3_vj6it"]
 [ext_resource type="PackedScene" uid="uid://c51pju1n2k8jh" path="res://scenes/Assets/falling_block.tscn" id="4_2kdxr"]
 [ext_resource type="PackedScene" uid="uid://bs0ti2xwqkf5h" path="res://scenes/Assets/tile_map_2.tscn" id="4_tnb2c"]
 

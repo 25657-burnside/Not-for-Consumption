@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://v5b1p4w7t6bm"
-path="res://.godot/imported/game start button.PNG-b5a22770e47511df25658ffdccf84cb8.ctex"
+uid="uid://jcioh6mpfjs8"
+path="res://.godot/imported/game start loading screen.PNG-fdc6a566815e5e89adddf8931eb5394c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Assets/game start button.PNG"
-dest_files=["res://.godot/imported/game start button.PNG-b5a22770e47511df25658ffdccf84cb8.ctex"]
+source_file="res://sprites/game start loading screen.PNG"
+dest_files=["res://.godot/imported/game start loading screen.PNG-fdc6a566815e5e89adddf8931eb5394c.ctex"]
 
 [params]
 
