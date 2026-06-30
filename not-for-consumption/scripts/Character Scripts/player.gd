@@ -1,4 +1,6 @@
 extends CharacterBody2D
+@export var fall_limit: float = 1000.0
+
 func _ready():
 	add_to_group("player")
 	
@@ -7,6 +9,7 @@ const JUMP_VELOCITY = -450
 
 
 func _physics_process(delta: float) -> void:
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -24,3 +27,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	if global_position.y > fall_limit:
+		await get_tree().create_timer(2.0).timeout
+		get_tree().reload_current_scene()
+	
