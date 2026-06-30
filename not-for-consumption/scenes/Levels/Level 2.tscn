@@ -38,7 +38,7 @@ sources/0 = SubResource("TileSetAtlasSource_tnb2c")
 
 [node name="portal" parent="." unique_id=348463966 instance=ExtResource("3_2x4of")]
 z_index = 2
-position = Vector2(656, 1056)
+position = Vector2(712, 9400)
 
 [node name="Layer0" type="TileMapLayer" parent="." unique_id=1263195160]
 use_parent_material = true
