@@ -35,10 +35,11 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tnb2c")
 
 [node name="endgame" type="Node2D" unique_id=957492335]
+position = Vector2(-64, -8)
 
 [node name="portal" parent="." unique_id=348463966 instance=ExtResource("3_2x4of")]
 z_index = 2
-position = Vector2(712, 9400)
+position = Vector2(544, 1488)
 
 [node name="Layer0" type="TileMapLayer" parent="." unique_id=1263195160]
 use_parent_material = true

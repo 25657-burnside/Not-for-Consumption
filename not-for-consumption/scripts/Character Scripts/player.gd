@@ -1,5 +1,5 @@
 extends CharacterBody2D
-@export var fall_limit: float = 1000.0
+@export var fall_limit: float = 570.0
 
 func _ready():
 	add_to_group("player")
