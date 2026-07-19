@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p2ee6nwjnl3e"
-path="res://.godot/imported/New Piskel.png-1d1450533306d83717fbc2d6a043035f.ctex"
+uid="uid://fgnjmvdugw4u"
+path="res://.godot/imported/teeth.png-9d1ccffa657dae0f6fe7e96530f816de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/New Piskel.png"
-dest_files=["res://.godot/imported/New Piskel.png-1d1450533306d83717fbc2d6a043035f.ctex"]
+source_file="res://sprites/teeth.png"
+dest_files=["res://.godot/imported/teeth.png-9d1ccffa657dae0f6fe7e96530f816de.ctex"]
 
 [params]
 
