@@ -19,4 +19,6 @@ texture = ExtResource("2_dhbp4")
 shape = SubResource("RectangleShape2D_014kd")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1694205365]
+limit_left = -10000009
+limit_right = 10000001
 position_smoothing_enabled = true

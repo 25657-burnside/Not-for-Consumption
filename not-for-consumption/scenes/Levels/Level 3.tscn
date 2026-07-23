@@ -2,9 +2,11 @@
 
 [ext_resource type="Script" uid="uid://dorresuj45f8b" path="res://scripts/level_3.gd" id="1_c6eld"]
 [ext_resource type="PackedScene" uid="uid://bbrodeajuqaqj" path="res://scenes/Assets/portals/portal 3.tscn" id="3_3vrfu"]
-[ext_resource type="PackedScene" uid="uid://cx4veea682oa7" path="res://scenes/Assets/player3.tscn" id="3_c6eld"]
+[ext_resource type="PackedScene" uid="uid://cx4veea682oa7" path="res://scenes/Assets/Players/player3.tscn" id="3_c6eld"]
 [ext_resource type="PackedScene" uid="uid://bs0ti2xwqkf5h" path="res://scenes/Assets/tile_map_2.tscn" id="3_y5r85"]
 [ext_resource type="PackedScene" uid="uid://bkcn3w61ei88w" path="res://scenes/Assets/bile wave.tscn" id="4_y5r85"]
+[ext_resource type="PackedScene" uid="uid://ckqdbmy1ayj4s" path="res://scenes/Assets/jump_pad.tscn" id="6_jximb"]
+[ext_resource type="Texture2D" uid="uid://bspbn2qy7i6fw" path="res://sprites/acidlake.png" id="7_6tvbe"]
 
 [node name="Node2D" type="Node2D" unique_id=674097940]
 position = Vector2(51, -25)
@@ -22,10 +24,18 @@ layer_0/tile_data = PackedInt32Array(524289, 0, 2, 524290, 65536, 2, 524291, 655
 position = Vector2(227, 498)
 
 [node name="Timer" type="Timer" parent="." unique_id=981103953]
-wait_time = 3.0
+wait_time = 4.0
 autostart = true
 
 [node name="spawn_marker" type="Marker2D" parent="." unique_id=373177974]
-position = Vector2(1252, 528)
+position = Vector2(386, 516)
+
+[node name="JumpPad" parent="." unique_id=880458707 instance=ExtResource("6_jximb")]
+position = Vector2(945, 525)
+
+[node name="Acidlake" type="Sprite2D" parent="." unique_id=318301618]
+position = Vector2(817.24994, 724.5)
+scale = Vector2(0.66785717, 0.6024306)
+texture = ExtResource("7_6tvbe")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

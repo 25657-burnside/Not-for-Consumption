@@ -1,21 +1,22 @@
 [gd_scene format=3 uid="uid://bkcn3w61ei88w"]
 
-[ext_resource type="Script" uid="uid://b2slvywiufyxh" path="res://bile wave.gd" id="1_3gw70"]
+[ext_resource type="Script" uid="uid://b2slvywiufyxh" path="res://scripts/bile wave.gd" id="1_3gw70"]
 [ext_resource type="Texture2D" uid="uid://jg46jqnvdrlb" path="res://sprites/New Piskel (1).png" id="2_mqvqg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_otfif"]
-size = Vector2(77, 82)
+size = Vector2(85.25, 101)
 
 [node name="Area2D" type="Area2D" unique_id=844889645]
+position = Vector2(14, -29)
 script = ExtResource("1_3gw70")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=367536285]
-position = Vector2(-1.5258789e-05, 0)
-scale = Vector2(0.4625, 0.446875)
+position = Vector2(-14.500019, 26.250002)
+scale = Vector2(0.5531249, 0.6109375)
 texture = ExtResource("2_mqvqg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1854317949]
-position = Vector2(3, 31)
+position = Vector2(-10.375, 74)
 shape = SubResource("RectangleShape2D_otfif")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1228465352]
