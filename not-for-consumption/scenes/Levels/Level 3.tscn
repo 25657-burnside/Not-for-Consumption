@@ -34,8 +34,8 @@ position = Vector2(420, 698)
 position = Vector2(945, 525)
 
 [node name="Acidlake" type="Sprite2D" parent="." unique_id=318301618]
-position = Vector2(817, 695.00006)
-scale = Vector2(0.66785717, 0.6024306)
+position = Vector2(819, 814.25)
+scale = Vector2(0.67777777, 0.9539931)
 texture = ExtResource("7_6tvbe")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
