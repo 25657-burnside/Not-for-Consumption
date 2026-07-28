@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://5ac4e6y4mga5"]
+
+[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="1_mpnot"]
+
+[sub_resource type="GDScript" id="GDScript_fwrey"]
+script/source = "extends Area2D
+var fall_speed = 200
+
+func _process(delta):
+	# Move the whole formation down
+	position.y -= fall_speed * delta
+	
+	# If the formation goes past the bottom of the screen (e.g., Y = 800)
+	# Delete it! Once deleted, your Spawner will automatically spawn the next one.
+	if position.y < 32:
+		queue_free()
+func _on_body_entered(body: Node2D) -> void:
+	# Check if the thing that touched us is the player
+	if body.is_in_group(\"player\"):
+		# This deletes the player from the game. 
+		# (Later, you can change this to trigger a game over screen instead!)
+		get_tree().reload_current_scene()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]
+size = Vector2(100, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fvdov"]
+size = Vector2(64, 224)
+
+[node name="Obstacle 2" type="Area2D" unique_id=1295667444 groups=["player"]]
+script = SubResource("GDScript_fwrey")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1109688378]
+position = Vector2(56, -80)
+scale = Vector2(0.8125, 0.5)
+texture = ExtResource("1_mpnot")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=259986325]
+position = Vector2(414.50003, -48)
+scale = Vector2(0.3984371, 1.75)
+texture = ExtResource("1_mpnot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1052718494]
+position = Vector2(56, -80)
+shape = SubResource("RectangleShape2D_tyhon")
+
+[node name="Collison" type="CollisionShape2D" parent="." unique_id=818865292]
+position = Vector2(416, -48)
+shape = SubResource("RectangleShape2D_fvdov")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -39,7 +39,7 @@ position = Vector2(-64, -8)
 
 [node name="portal" parent="." unique_id=348463966 instance=ExtResource("3_2x4of")]
 z_index = 2
-position = Vector2(544, 1488)
+position = Vector2(688, 9464)
 
 [node name="Layer0" type="TileMapLayer" parent="." unique_id=1263195160]
 use_parent_material = true
@@ -51,10 +51,10 @@ tile_set = SubResource("TileSet_h8v3o")
 position = Vector2(640, 96)
 
 [node name="Obstacle 2" parent="." unique_id=2134004670 instance=ExtResource("5_2x4of")]
-position = Vector2(392, 616)
+position = Vector2(424, 856)
 
 [node name="Obstacle 3" parent="." unique_id=1295667444 instance=ExtResource("5_x268y")]
-position = Vector2(400, 984)
+position = Vector2(400, 1224)
 
 [node name="Spawner" type="Node2D" parent="." unique_id=1755388281]
 position = Vector2(640, 648)
