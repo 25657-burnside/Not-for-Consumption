@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://5ac4e6y4mga5"]
 
-[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="1_mpnot"]
+[ext_resource type="Texture2D" uid="uid://dwselef1h3win" path="res://sprites/Digitech Asset Lego.png" id="1_byl00"]
+[ext_resource type="Texture2D" uid="uid://bgb7rgutjhc7f" path="res://sprites/Digitech Asset Lolly.png" id="2_4fmv4"]
 
 [sub_resource type="GDScript" id="GDScript_fwrey"]
 script/source = "extends Area2D
@@ -23,7 +24,7 @@ func _on_body_entered(body: Node2D) -> void:
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]
-size = Vector2(100, 64)
+size = Vector2(72, 64)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fvdov"]
 size = Vector2(64, 224)
@@ -32,17 +33,18 @@ size = Vector2(64, 224)
 script = SubResource("GDScript_fwrey")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1109688378]
-position = Vector2(56, -80)
-scale = Vector2(0.8125, 0.5)
-texture = ExtResource("1_mpnot")
+position = Vector2(48, -87.99999)
+scale = Vector2(0.09211666, 0.08552632)
+texture = ExtResource("1_byl00")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=259986325]
-position = Vector2(414.50003, -48)
-scale = Vector2(0.3984371, 1.75)
-texture = ExtResource("1_mpnot")
+position = Vector2(416, -63.999996)
+rotation = -0.23038346
+scale = Vector2(0.08756549, 0.1111827)
+texture = ExtResource("2_4fmv4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1052718494]
-position = Vector2(56, -80)
+position = Vector2(52, -80)
 shape = SubResource("RectangleShape2D_tyhon")
 
 [node name="Collison" type="CollisionShape2D" parent="." unique_id=818865292]

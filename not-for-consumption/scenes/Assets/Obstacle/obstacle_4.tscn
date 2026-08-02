@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://d0cb0pag0pn0a"]
 
+[ext_resource type="Texture2D" uid="uid://bgb7rgutjhc7f" path="res://sprites/Digitech Asset Lolly.png" id="1_k0fjq"]
 [ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="1_p3moj"]
 
 [sub_resource type="GDScript" id="GDScript_fwrey"]
@@ -29,10 +30,10 @@ size = Vector2(212.99951, 40)
 script = SubResource("GDScript_fwrey")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1109688378]
-position = Vector2(96, -96)
-rotation = -0.5403877499999999
-scale = Vector2(1.6733828, 0.3125)
-texture = ExtResource("1_p3moj")
+position = Vector2(88, -88)
+rotation = 0.754685
+scale = Vector2(0.0665583, 0.08091526)
+texture = ExtResource("1_k0fjq")
 
 [node name="Sprite2" type="Sprite2D" parent="." unique_id=1094717625]
 position = Vector2(413.1944, -93.83338)
@@ -42,7 +43,7 @@ texture = ExtResource("1_p3moj")
 
 [node name="Collioson" type="CollisionShape2D" parent="." unique_id=1052718494]
 position = Vector2(96, -96)
-rotation = -0.5403877499999999
+rotation = -0.54038775
 shape = SubResource("RectangleShape2D_tyhon")
 
 [node name="Collioson2" type="CollisionShape2D" parent="." unique_id=1797686715]

@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://q20i8ilph7uf"]
+
+[ext_resource type="Script" uid="uid://buswwxnhwtbpl" path="res://scripts/falling_block.gd" id="1_taemm"]
+[ext_resource type="Texture2D" uid="uid://d0p6smi5sgcpq" path="res://sprites/Digitech Asset Tooth 4.png" id="2_7cx6k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n3ljx"]
+size = Vector2(45, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcyuk"]
+size = Vector2(40, 464)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u4enj"]
+size = Vector2(43, 5)
+
+[node name="FallingBlock" type="CharacterBody2D" unique_id=168973367]
+script = ExtResource("1_taemm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2146063375]
+position = Vector2(8, 5)
+scale = Vector2(0.04986133, 0.044003118)
+texture = ExtResource("2_7cx6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=923836316]
+position = Vector2(4.5, 14)
+shape = SubResource("RectangleShape2D_n3ljx")
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=584020498]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=1938290298]
+position = Vector2(4, 240)
+shape = SubResource("RectangleShape2D_mcyuk")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1733773949]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1236992458]
+position = Vector2(4.5, 30)
+shape = SubResource("RectangleShape2D_u4enj")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
