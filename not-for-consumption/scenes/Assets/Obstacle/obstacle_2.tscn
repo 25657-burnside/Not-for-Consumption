@@ -13,7 +13,7 @@ func _process(delta):
 	
 	# If the formation goes past the bottom of the screen (e.g., Y = 800)
 	# Delete it! Once deleted, your Spawner will automatically spawn the next one.
-	if position.y < 32:
+	if position.y < -250:
 		queue_free()
 func _on_body_entered(body: Node2D) -> void:
 	# Check if the thing that touched us is the player
@@ -33,24 +33,24 @@ size = Vector2(168, 72)
 script = SubResource("GDScript_fwrey")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1109688378]
-position = Vector2(136, 48.000004)
+position = Vector2(136, -40)
 rotation = 2.2449164
 scale = Vector2(0.12163094, 0.1327821)
 texture = ExtResource("1_fh8qn")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=259986325]
-position = Vector2(443.8437, 19.59111)
+position = Vector2(434.84277, -115.09401)
 rotation = 0.7871039
 scale = Vector2(0.14011735, 0.13633798)
 texture = ExtResource("2_02i73")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1052718494]
-position = Vector2(144, 56.000008)
+position = Vector2(144, -37.495575)
 rotation = 2.2443495
 shape = SubResource("RectangleShape2D_tyhon")
 
 [node name="Collison" type="CollisionShape2D" parent="." unique_id=818865292]
-position = Vector2(456, 24)
+position = Vector2(446.99908, -110.68512)
 rotation = 0.7871039
 shape = SubResource("RectangleShape2D_fvdov")
 

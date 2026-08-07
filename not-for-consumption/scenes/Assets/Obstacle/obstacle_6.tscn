@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cunwm2ej0lb3q"]
 
 [ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="1_7wdfe"]
+[ext_resource type="Texture2D" uid="uid://ite7p5aeuej2" path="res://sprites/Digitech Asset Battery.png" id="1_llpmw"]
 
 [sub_resource type="GDScript" id="GDScript_fwrey"]
 script/source = "extends Area2D
@@ -12,7 +13,7 @@ func _process(delta):
 	
 	# If the formation goes past the bottom of the screen (e.g., Y = 800)
 	# Delete it! Once deleted, your Spawner will automatically spawn the next one.
-	if position.y < 32:
+	if position.y < -250:
 		queue_free()
 func _on_body_entered(body: Node2D) -> void:
 	# Check if the thing that touched us is the player
@@ -23,31 +24,31 @@ func _on_body_entered(body: Node2D) -> void:
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]
-size = Vector2(212.99951, 40)
+size = Vector2(140.00195, 40)
 
 [node name="Obstacle 3" type="Area2D" unique_id=1295667444 groups=["player"]]
 script = SubResource("GDScript_fwrey")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1109688378]
-position = Vector2(96, -96)
-rotation = -0.5403877499999999
-scale = Vector2(1.6733828, 0.3125)
-texture = ExtResource("1_7wdfe")
+position = Vector2(98, -92.00001)
+rotation = -0.017218914
+scale = Vector2(0.07158494, 0.08031534)
+texture = ExtResource("1_llpmw")
 
 [node name="Sprite2" type="Sprite2D" parent="." unique_id=1094717625]
 position = Vector2(413.1944, -93.83338)
-rotation = -0.5641687
+rotation = -1.5826163
 scale = Vector2(1.6733828, 0.3125)
 texture = ExtResource("1_7wdfe")
 
 [node name="Collioson" type="CollisionShape2D" parent="." unique_id=1052718494]
-position = Vector2(96, -96)
-rotation = -0.5403877499999999
+position = Vector2(95.99979, -95.982056)
+rotation = -1.5588354
 shape = SubResource("RectangleShape2D_tyhon")
 
 [node name="Collioson2" type="CollisionShape2D" parent="." unique_id=1797686715]
 position = Vector2(413.1944, -93.83336)
-rotation = -0.5641687
+rotation = -1.5826163
 shape = SubResource("RectangleShape2D_tyhon")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

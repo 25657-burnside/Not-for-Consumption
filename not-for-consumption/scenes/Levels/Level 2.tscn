@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://5ac4e6y4mga5" path="res://scenes/Assets/Obstacle/obstacle_1.tscn" id="5_x268y"]
 [ext_resource type="Script" uid="uid://j4sehkeu1ggq" path="res://scripts/spawner.gd" id="6_x268y"]
 [ext_resource type="PackedScene" uid="uid://cxaugi1wxdenk" path="res://scenes/Assets/Obstacle/obstacle_3.tscn" id="7_vxhfg"]
+[ext_resource type="PackedScene" uid="uid://d0cb0pag0pn0a" path="res://scenes/Assets/Obstacle/obstacle_4.tscn" id="8_6e6as"]
+[ext_resource type="PackedScene" uid="uid://bdq8bso7pw7sr" path="res://scenes/Assets/Obstacle/obstacle_5.tscn" id="9_p64hj"]
+[ext_resource type="PackedScene" uid="uid://cunwm2ej0lb3q" path="res://scenes/Assets/Obstacle/obstacle_6.tscn" id="10_p64hj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnb2c"]
 texture = ExtResource("1_4bqgd")
@@ -49,17 +52,26 @@ tile_map_data = PackedByteArray("AAD//wgAAAACAAEAAAAIAAgAAAAAAAEAAAAJAAgAAAABAAE
 tile_set = SubResource("TileSet_h8v3o")
 
 [node name="player" parent="." unique_id=1999039877 groups=["player"] instance=ExtResource("3_h15i8")]
-position = Vector2(640, 504)
+position = Vector2(632, 168)
 
 [node name="Spawner" type="Node2D" parent="." unique_id=1755388281]
-position = Vector2(640, 648)
+position = Vector2(416, -120)
 script = ExtResource("6_x268y")
 
 [node name="Obstacle 4" parent="." unique_id=1295667444 instance=ExtResource("5_x268y")]
-position = Vector2(424, 784)
+position = Vector2(408, 992)
 
 [node name="Obstacle 2" parent="." unique_id=2083524088 instance=ExtResource("5_2x4of")]
-position = Vector2(360, 1112)
+position = Vector2(368, 2176)
 
 [node name="Obstacle 3" parent="." unique_id=1957371626 instance=ExtResource("7_vxhfg")]
-position = Vector2(384, 1456)
+position = Vector2(408.00003, 1367.9999)
+
+[node name="Obstacle 5" parent="." unique_id=920033370 instance=ExtResource("8_6e6as")]
+position = Vector2(448, 1760)
+
+[node name="Obstacle 6" parent="." unique_id=563259447 instance=ExtResource("9_p64hj")]
+position = Vector2(400, 2832)
+
+[node name="Obstacle 7" parent="." unique_id=588624021 instance=ExtResource("10_p64hj")]
+position = Vector2(528, 496)

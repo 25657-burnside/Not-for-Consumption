@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://d0cb0pag0pn0a"]
 
-[ext_resource type="Texture2D" uid="uid://bgb7rgutjhc7f" path="res://sprites/Digitech Asset Lolly.png" id="1_k0fjq"]
-[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="1_p3moj"]
+[ext_resource type="Texture2D" uid="uid://b3e3u05f1jddk" path="res://sprites/Digitech Asset Lint.png" id="1_wq4mr"]
+[ext_resource type="Texture2D" uid="uid://c7n2oxhr3jvfr" path="res://sprites/Digitech Asset Mint.png" id="2_1gnkl"]
+[ext_resource type="Texture2D" uid="uid://db5bpeoaics21" path="res://sprites/Digitech Asset Coin.png" id="3_g62nf"]
 
 [sub_resource type="GDScript" id="GDScript_fwrey"]
 script/source = "extends Area2D
@@ -13,7 +14,7 @@ func _process(delta):
 	
 	# If the formation goes past the bottom of the screen (e.g., Y = 800)
 	# Delete it! Once deleted, your Spawner will automatically spawn the next one.
-	if position.y < 32:
+	if position.y < -250:
 		queue_free()
 func _on_body_entered(body: Node2D) -> void:
 	# Check if the thing that touched us is the player
@@ -24,31 +25,50 @@ func _on_body_entered(body: Node2D) -> void:
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]
-size = Vector2(212.99951, 40)
+size = Vector2(33.13382, 43.903664)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7l36s"]
+radius = 32.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jmfuy"]
+radius = 30.0
+height = 138.0
 
 [node name="Obstacle 3" type="Area2D" unique_id=1295667444 groups=["player"]]
+position = Vector2(4, 10)
 script = SubResource("GDScript_fwrey")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1109688378]
-position = Vector2(88, -88)
+position = Vector2(46.000008, -146)
 rotation = 0.754685
 scale = Vector2(0.0665583, 0.08091526)
-texture = ExtResource("1_k0fjq")
+texture = ExtResource("1_wq4mr")
 
 [node name="Sprite2" type="Sprite2D" parent="." unique_id=1094717625]
-position = Vector2(413.1944, -93.83338)
-rotation = -0.5641687
-scale = Vector2(1.6733828, 0.3125)
-texture = ExtResource("1_p3moj")
+position = Vector2(395.77063, -145.0917)
+rotation = -0.42194277
+scale = Vector2(0.08840008, 0.09059326)
+texture = ExtResource("2_1gnkl")
 
 [node name="Collioson" type="CollisionShape2D" parent="." unique_id=1052718494]
-position = Vector2(96, -96)
+position = Vector2(40, -146.89355)
 rotation = -0.54038775
 shape = SubResource("RectangleShape2D_tyhon")
 
-[node name="Collioson2" type="CollisionShape2D" parent="." unique_id=1797686715]
-position = Vector2(413.1944, -93.83336)
-rotation = -0.5641687
-shape = SubResource("RectangleShape2D_tyhon")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1906508620]
+position = Vector2(398.77063, -150.0917)
+rotation = 0.14222592
+shape = SubResource("CircleShape2D_7l36s")
+
+[node name="DigitechAssetCoin" type="Sprite2D" parent="." unique_id=1246450927]
+position = Vector2(217.61319, 24.668495)
+rotation = -0.29757044
+scale = Vector2(0.12904385, 0.13919598)
+texture = ExtResource("3_g62nf")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2092259771]
+position = Vector2(226.61319, 15.66851)
+rotation = 1.2732259
+shape = SubResource("CapsuleShape2D_jmfuy")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
