@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://cxaugi1wxdenk" path="res://scenes/Assets/Obstacle/obstacle_3.tscn" id="7_vxhfg"]
 [ext_resource type="PackedScene" uid="uid://d0cb0pag0pn0a" path="res://scenes/Assets/Obstacle/obstacle_4.tscn" id="8_6e6as"]
 [ext_resource type="PackedScene" uid="uid://bdq8bso7pw7sr" path="res://scenes/Assets/Obstacle/obstacle_5.tscn" id="9_p64hj"]
-[ext_resource type="PackedScene" uid="uid://cunwm2ej0lb3q" path="res://scenes/Assets/Obstacle/obstacle_6.tscn" id="10_p64hj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnb2c"]
 texture = ExtResource("1_4bqgd")
@@ -72,6 +71,3 @@ position = Vector2(448, 1760)
 
 [node name="Obstacle 6" parent="." unique_id=563259447 instance=ExtResource("9_p64hj")]
 position = Vector2(400, 2832)
-
-[node name="Obstacle 7" parent="." unique_id=588624021 instance=ExtResource("10_p64hj")]
-position = Vector2(528, 496)
