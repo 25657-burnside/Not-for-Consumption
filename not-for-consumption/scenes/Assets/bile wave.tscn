@@ -4,21 +4,37 @@
 [ext_resource type="Texture2D" uid="uid://jg46jqnvdrlb" path="res://sprites/New Piskel (1).png" id="2_mqvqg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_otfif"]
-size = Vector2(85.25, 101)
+size = Vector2(179, 214.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gw70"]
+size = Vector2(92, 62)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mqvqg"]
+size = Vector2(57.5, 41.5)
 
 [node name="Area2D" type="Area2D" unique_id=844889645]
-position = Vector2(14, -29)
+position = Vector2(-0.99998856, -3.0000038)
+scale = Vector2(0.6792015, 0.7369584)
 script = ExtResource("1_3gw70")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=367536285]
-position = Vector2(-14.500019, 26.250002)
-scale = Vector2(0.5531249, 0.6109375)
+position = Vector2(-2.4613895, -91.09944)
+scale = Vector2(1.1125001, 1.196875)
 texture = ExtResource("2_mqvqg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1854317949]
-position = Vector2(-10.375, 74)
+position = Vector2(3.6921005, 0)
 shape = SubResource("RectangleShape2D_otfif")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1228465352]
+position = Vector2(70.14983, 59.56502)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1968630542]
+position = Vector2(-35.690254, -136.64917)
+shape = SubResource("RectangleShape2D_3gw70")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1640924622]
+position = Vector2(-87.37959, -186.87064)
+shape = SubResource("RectangleShape2D_mqvqg")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

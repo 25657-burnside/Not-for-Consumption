@@ -3,18 +3,25 @@
 [ext_resource type="Texture2D" uid="uid://crg5kdft284v7" path="res://sprites/Digitech Asset Crayon.png" id="1_eqd2m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_buby2"]
-size = Vector2(352.86108, 62.306335)
+size = Vector2(260.69724, 55.996143)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqd2m"]
+size = Vector2(49, 26)
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=2114704477]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=665162789]
-position = Vector2(0, 7.275958e-12)
+position = Vector2(-1, -1)
 rotation = 1.5905955
-scale = Vector2(0.2, 0.201)
+scale = Vector2(0.19285291, 0.18787211)
 texture = ExtResource("1_eqd2m")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2035501685]
-position = Vector2(13, -3.5000005)
+position = Vector2(-16.709904, -0.7403187)
 rotation = 0.013317802
 scale = Vector2(0.9999999, 0.9999999)
 shape = SubResource("RectangleShape2D_buby2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1299223087]
+position = Vector2(139, 1)
+shape = SubResource("RectangleShape2D_eqd2m")

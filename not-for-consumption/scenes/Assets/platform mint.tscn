@@ -3,15 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://c7n2oxhr3jvfr" path="res://sprites/Digitech Asset Mint.png" id="1_6jb7j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_y5wk1"]
-radius = 49.25571
+radius = 100.872116
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=2114704477]
 rotation = -0.020654973
 scale = Vector2(2.0034387, 1.9938086)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=665162789]
-position = Vector2(-8, 2.9999998)
-scale = Vector2(0.1373728, 0.13815789)
+position = Vector2(-16.113457, 6.688751)
+scale = Vector2(0.2850926, 0.2867219)
 texture = ExtResource("1_6jb7j")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2035501685]

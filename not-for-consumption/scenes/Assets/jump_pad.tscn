@@ -4,17 +4,30 @@
 [ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="2_x0s77"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_381nw"]
-size = Vector2(64, 16)
+size = Vector2(80, 96)
 
 [node name="JumpPad" type="Area2D" unique_id=880458707]
+position = Vector2(-24, 16)
+rotation = 0.10421498
 script = ExtResource("1_61mbu")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1699901040]
-position = Vector2(1.1920929e-06, -0.06250069)
-scale = Vector2(0.50000006, 0.12402342)
+position = Vector2(15.999999, -24.062504)
+scale = Vector2(0.5, 0.49902344)
 texture = ExtResource("2_x0s77")
 
+[node name="ColorRect" type="ColorRect" parent="Sprite2D" unique_id=590649419]
+anchors_preset = -1
+anchor_top = -0.50097847
+anchor_right = 0.25
+offset_left = -63.999996
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.50198
+metadata/_edit_use_anchors_ = true
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=389658244]
+position = Vector2(24, -40)
 shape = SubResource("RectangleShape2D_381nw")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
