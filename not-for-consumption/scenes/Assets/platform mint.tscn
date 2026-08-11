@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://tpmj141gvyie"]
+
+[ext_resource type="Texture2D" uid="uid://c7n2oxhr3jvfr" path="res://sprites/Digitech Asset Mint.png" id="1_6jb7j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y5wk1"]
+radius = 49.25571
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=2114704477]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=665162789]
+position = Vector2(-8, 2.9999998)
+scale = Vector2(0.1373728, 0.13815789)
+texture = ExtResource("1_6jb7j")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2035501685]
+shape = SubResource("CircleShape2D_y5wk1")

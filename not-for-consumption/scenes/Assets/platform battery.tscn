@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bjunrtrep7gep"]
+
+[ext_resource type="Texture2D" uid="uid://ite7p5aeuej2" path="res://sprites/Digitech Asset Battery.png" id="1_vv2ke"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tccqt"]
+size = Vector2(62.886692, 210.3756)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=2114704477]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=665162789]
+position = Vector2(-27, -63.000008)
+rotation = 0.8193007
+scale = Vector2(0.1373728, 0.13815789)
+texture = ExtResource("1_vv2ke")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2035501685]
+position = Vector2(-24.404202, -70.256355)
+rotation = 0.84498996
+shape = SubResource("RectangleShape2D_tccqt")

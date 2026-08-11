@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ba0ekqie8vaan"]
+
+[ext_resource type="Texture2D" uid="uid://dwselef1h3win" path="res://sprites/Digitech Asset Lego.png" id="1_joycg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_joycg"]
+size = Vector2(96, 104)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=2114704477]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=665162789]
+position = Vector2(0, 7.275958e-12)
+scale = Vector2(0.1373728, 0.13815789)
+texture = ExtResource("1_joycg")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2035501685]
+position = Vector2(8, 12)
+shape = SubResource("RectangleShape2D_joycg")
