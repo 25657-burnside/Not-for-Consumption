@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://df7niopxkqy8t"]
 
-[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="1_p11w2"]
+[ext_resource type="Texture2D" uid="uid://bgb7rgutjhc7f" path="res://sprites/Digitech Asset Lolly.png" id="1_jdavd"]
+[ext_resource type="Texture2D" uid="uid://crg5kdft284v7" path="res://sprites/Digitech Asset Crayon.png" id="2_xfsdg"]
 
 [sub_resource type="GDScript" id="GDScript_fwrey"]
 script/source = "extends Area2D
@@ -23,31 +24,46 @@ func _on_body_entered(body: Node2D) -> void:
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]
-size = Vector2(212.99951, 40)
+size = Vector2(135.18562, 15.290672)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bdb7h"]
+radius = 34.88553
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k43ux"]
+size = Vector2(26, 180.16135)
 
 [node name="Obstacle 3" type="Area2D" unique_id=1295667444 groups=["player"]]
+position = Vector2(1, 0)
 script = SubResource("GDScript_fwrey")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1109688378]
-position = Vector2(96, -96)
-rotation = -0.54038775
-scale = Vector2(1.6733828, 0.3125)
-texture = ExtResource("1_p11w2")
+position = Vector2(278.59424, -227.19264)
+rotation = 2.8172233
+scale = Vector2(0.11879992, 0.14108372)
+texture = ExtResource("1_jdavd")
 
 [node name="Sprite2" type="Sprite2D" parent="." unique_id=1094717625]
-position = Vector2(413.1944, -93.83338)
-rotation = -0.5641687
-scale = Vector2(1.6733828, 0.3125)
-texture = ExtResource("1_p11w2")
+position = Vector2(211.97577, 107.99515)
+rotation = 2.0361917
+scale = Vector2(0.1656919, 0.17424954)
+texture = ExtResource("2_xfsdg")
 
 [node name="Collioson" type="CollisionShape2D" parent="." unique_id=1052718494]
-position = Vector2(96, -96)
-rotation = -0.54038775
+position = Vector2(276.59424, -293.19263)
+rotation = 1.4918655
+scale = Vector2(1.3518559, 1.4919909)
 shape = SubResource("RectangleShape2D_tyhon")
 
-[node name="Collioson2" type="CollisionShape2D" parent="." unique_id=1797686715]
-position = Vector2(413.1944, -93.83336)
-rotation = -0.5641687
-shape = SubResource("RectangleShape2D_tyhon")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=323911987]
+position = Vector2(287.36282, -152.08232)
+rotation = 1.8616636
+scale = Vector2(1.3518559, 1.491991)
+shape = SubResource("CircleShape2D_bdb7h")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1728763288]
+position = Vector2(215.69908, 109.03998)
+rotation = 2.0212753
+scale = Vector2(1.6140337, 1.68002)
+shape = SubResource("RectangleShape2D_k43ux")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

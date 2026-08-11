@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://cunwm2ej0lb3q"]
 
-[ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="1_7wdfe"]
-[ext_resource type="Texture2D" uid="uid://ite7p5aeuej2" path="res://sprites/Digitech Asset Battery.png" id="1_llpmw"]
+[ext_resource type="Texture2D" uid="uid://dwselef1h3win" path="res://sprites/Digitech Asset Lego.png" id="1_llpmw"]
+[ext_resource type="Texture2D" uid="uid://c7n2oxhr3jvfr" path="res://sprites/Digitech Asset Mint.png" id="2_ik8vl"]
+[ext_resource type="Texture2D" uid="uid://b3e3u05f1jddk" path="res://sprites/Digitech Asset Lint.png" id="3_l8tnm"]
+[ext_resource type="Texture2D" uid="uid://db5bpeoaics21" path="res://sprites/Digitech Asset Coin.png" id="4_1iks8"]
 
 [sub_resource type="GDScript" id="GDScript_fwrey"]
 script/source = "extends Area2D
@@ -24,31 +26,66 @@ func _on_body_entered(body: Node2D) -> void:
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]
-size = Vector2(140.00195, 40)
+size = Vector2(66.99521, 50.984386)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l8tnm"]
+radius = 27.985504
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_djtls"]
+radius = 27.018513
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jof8e"]
+radius = 21.663208
+height = 88.294785
 
 [node name="Obstacle 3" type="Area2D" unique_id=1295667444 groups=["player"]]
 script = SubResource("GDScript_fwrey")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1109688378]
-position = Vector2(98, -92.00001)
-rotation = -0.017218914
-scale = Vector2(0.07158494, 0.08031534)
+position = Vector2(287.14774, -428.53156)
+rotation = 0.047571182
+scale = Vector2(0.14414632, 0.14780459)
 texture = ExtResource("1_llpmw")
 
 [node name="Sprite2" type="Sprite2D" parent="." unique_id=1094717625]
-position = Vector2(413.1944, -93.83338)
+position = Vector2(466.36508, -163.05869)
 rotation = -1.5826163
-scale = Vector2(1.6733828, 0.3125)
-texture = ExtResource("1_7wdfe")
+scale = Vector2(0.107596315, 0.11619439)
+texture = ExtResource("2_ik8vl")
+
+[node name="Sprite3" type="Sprite2D" parent="." unique_id=1699605735]
+position = Vector2(233.05142, 111.05774)
+rotation = -0.78335655
+scale = Vector2(0.15458775, 0.18681316)
+texture = ExtResource("3_l8tnm")
 
 [node name="Collioson" type="CollisionShape2D" parent="." unique_id=1052718494]
-position = Vector2(95.99979, -95.982056)
-rotation = -1.5588354
+position = Vector2(295, -417)
+rotation = -1.4940453
+scale = Vector2(2.0136404, 2.0641642)
 shape = SubResource("RectangleShape2D_tyhon")
 
 [node name="Collioson2" type="CollisionShape2D" parent="." unique_id=1797686715]
-position = Vector2(413.1944, -93.83336)
+position = Vector2(464.31363, -167.05864)
 rotation = -1.5826163
-shape = SubResource("RectangleShape2D_tyhon")
+scale = Vector2(1.4420705, 1.4198464)
+shape = SubResource("CircleShape2D_l8tnm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=405959785]
+position = Vector2(227.05142, 120.05774)
+scale = Vector2(2.0136404, 2.0641642)
+shape = SubResource("CircleShape2D_djtls")
+
+[node name="DigitechAssetCoin" type="Sprite2D" parent="." unique_id=2021335875]
+position = Vector2(286.9364, -21.26332)
+rotation = -0.19404437
+scale = Vector2(0.16430497, 0.19604371)
+texture = ExtResource("4_1iks8")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=770937506]
+position = Vector2(301.93637, -36.26335)
+rotation = 1.3444365
+scale = Vector2(2.0136404, 2.0641642)
+shape = SubResource("CapsuleShape2D_jof8e")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
