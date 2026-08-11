@@ -1,5 +1,5 @@
 extends Area2D
-var fall_speed = 150
+var fall_speed = 220
 func _process(delta):
 	# Move the whole formation down
 	position.y -= fall_speed * delta
