@@ -6,7 +6,6 @@
 size = Vector2(236, 38)
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=2114704477]
-scale = Vector2(3.9992132, 3.3828754)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=665162789]
 position = Vector2(0, 7.275958e-12)
@@ -16,5 +15,5 @@ texture = ExtResource("1_eqd2m")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2035501685]
 position = Vector2(10, -1)
-rotation = 0.01130271
+rotation = 0.013317802
 shape = SubResource("RectangleShape2D_buby2")

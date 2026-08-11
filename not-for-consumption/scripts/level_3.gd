@@ -15,7 +15,7 @@ func _on_timer_timeout():
 	
 	# 3. ONLY GOING ONE WAY (Right to Left)
 	# It spawns at X = 850 (just off the right edge) and moves left (-1)
-	bullet.position = Vector2(1298.0, 470.0)
+	bullet.position = Vector2(2669.0, 601.0)
 	bullet.direction = -1
 	
 	add_child(bullet)
