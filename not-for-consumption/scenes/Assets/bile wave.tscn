@@ -14,7 +14,7 @@ size = Vector2(57.5, 41.5)
 
 [node name="Area2D" type="Area2D" unique_id=844889645]
 position = Vector2(-0.99998856, -3.0000038)
-scale = Vector2(0.6792015, 0.7369584)
+scale = Vector2(0.4513451, 0.59778535)
 script = ExtResource("1_3gw70")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=367536285]

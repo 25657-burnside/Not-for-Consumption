@@ -77,7 +77,7 @@ bullet_scene = ExtResource("4_y5r85")
 position = Vector2(5256, 600)
 
 [node name="player2" parent="." unique_id=453147879 instance=ExtResource("3_c6eld")]
-position = Vector2(5016, 464)
+position = Vector2(216, 480)
 
 [node name="Timer" type="Timer" parent="." unique_id=981103953]
 wait_time = 6.433000000000001
@@ -159,7 +159,6 @@ scale = Vector2(0.68194425, 1.158854)
 texture = ExtResource("7_6tvbe")
 
 [node name="Acidlake3" type="Sprite2D" parent="." unique_id=1278882518]
-visible = false
 position = Vector2(2456, 855.5625)
 scale = Vector2(0.73055553, 1.168186)
 texture = ExtResource("7_6tvbe")
@@ -170,7 +169,6 @@ scale = Vector2(0.7960322, 1.1666667)
 texture = ExtResource("7_6tvbe")
 
 [node name="Acidlake5" type="Sprite2D" parent="." unique_id=1093008846]
-visible = false
 position = Vector2(4417.6255, 856.00006)
 scale = Vector2(0.8152778, 1.1666665)
 texture = ExtResource("7_6tvbe")
