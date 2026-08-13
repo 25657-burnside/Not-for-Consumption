@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://tpmj141gvyie" path="res://scenes/Assets/platform mint.tscn" id="11_op1di"]
 [ext_resource type="PackedScene" uid="uid://dq2d31gejj1kb" path="res://scenes/Assets/platform fuzz.tscn" id="12_mo57s"]
 [ext_resource type="PackedScene" uid="uid://d34lyp48sdnmx" path="res://scenes/Assets/platform crayon and lollie.tscn" id="13_5d4o2"]
+[ext_resource type="Script" uid="uid://dp3aynis0mc3h" path="res://scenes/Levels/acidlake.gd" id="14_mo57s"]
 [ext_resource type="Texture2D" uid="uid://dudnpn0c6lmri" path="res://sprites/Untitled.png" id="15_8us2r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kcwu1"]
@@ -74,11 +75,8 @@ sources/0 = SubResource("TileSetAtlasSource_kcwu1")
 script = ExtResource("1_c6eld")
 bullet_scene = ExtResource("4_y5r85")
 
-[node name="Area2D" parent="." unique_id=230328529 instance=ExtResource("3_3vrfu")]
-position = Vector2(5256, 600)
-
 [node name="player2" parent="." unique_id=453147879 instance=ExtResource("3_c6eld")]
-position = Vector2(16, -648)
+position = Vector2(87, 466)
 
 [node name="Timer" type="Timer" parent="." unique_id=981103953]
 wait_time = 6.433000000000001
@@ -90,12 +88,12 @@ position = Vector2(4840, 440)
 [node name="JumpPad" parent="." unique_id=880458707 instance=ExtResource("6_jximb")]
 position = Vector2(752, 568)
 
-[node name="JumpPad2" parent="." unique_id=1891134033 instance=ExtResource("6_jximb")]
-position = Vector2(2088, 600.00006)
-rotation = -0.32050514
+[node name="JumpPad5" parent="." unique_id=1702840052 instance=ExtResource("6_jximb")]
+position = Vector2(3626, 571.99976)
+rotation = -0.6410103
 
-[node name="JumpPad2" parent="JumpPad2" unique_id=1702840052 instance=ExtResource("6_jximb")]
-position = Vector2(1475.4869, 481.35858)
+[node name="JumpPad2" parent="." unique_id=1891134033 instance=ExtResource("6_jximb")]
+position = Vector2(2759, 588.00006)
 rotation = -0.32050514
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1300445235]
@@ -132,7 +130,7 @@ position = Vector2(2416, 608)
 scale = Vector2(1, 1)
 
 [node name="StaticBody2D2" parent="." unique_id=1591883229 instance=ExtResource("12_mo57s")]
-position = Vector2(2800, 584)
+position = Vector2(2090, 601)
 scale = Vector2(1, 1)
 
 [node name="StaticBody2D5" parent="." unique_id=2095246220 instance=ExtResource("13_5d4o2")]
@@ -150,34 +148,43 @@ rotation = 0.3220389
 scale = Vector2(0.99999994, 0.99999994)
 
 [node name="Acidlake" type="Sprite2D" parent="." unique_id=318301618]
-position = Vector2(702.5, 851.56244)
+position = Vector2(702.49994, 837.43756)
 scale = Vector2(0.71349204, 1.1820749)
 texture = ExtResource("7_6tvbe")
+script = ExtResource("14_mo57s")
 
 [node name="Acidlake2" type="Sprite2D" parent="." unique_id=1421673392]
-position = Vector2(1570.3749, 858.25)
+position = Vector2(1570.3749, 844.1251)
 scale = Vector2(0.68194425, 1.158854)
 texture = ExtResource("7_6tvbe")
+script = ExtResource("14_mo57s")
 
 [node name="Acidlake3" type="Sprite2D" parent="." unique_id=1278882518]
-position = Vector2(2456, 855.5625)
+position = Vector2(2456, 841.4376)
 scale = Vector2(0.73055553, 1.168186)
 texture = ExtResource("7_6tvbe")
+script = ExtResource("14_mo57s")
 
 [node name="Acidlake4" type="Sprite2D" parent="." unique_id=617674556]
-position = Vector2(3413.5002, 856.00006)
+position = Vector2(3413.5002, 841.8752)
 scale = Vector2(0.7960322, 1.1666667)
 texture = ExtResource("7_6tvbe")
+script = ExtResource("14_mo57s")
 
 [node name="Acidlake5" type="Sprite2D" parent="." unique_id=1093008846]
-position = Vector2(4417.6255, 856.00006)
+position = Vector2(4417.6255, 841.8752)
 scale = Vector2(0.8152778, 1.1666665)
 texture = ExtResource("7_6tvbe")
+script = ExtResource("14_mo57s")
 
 [node name="Untitled" type="Sprite2D" parent="." unique_id=1998249683]
+visible = false
 position = Vector2(28.813684, -266.95468)
 rotation = 3.1415927
 scale = Vector2(0.19072318, 0.7639471)
 texture = ExtResource("15_8us2r")
+
+[node name="Area2D" parent="." unique_id=230328529 instance=ExtResource("3_3vrfu")]
+position = Vector2(5256, 600)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://djad66se3md3s"]
 
 [ext_resource type="Texture2D" uid="uid://crg5kdft284v7" path="res://sprites/Digitech Asset Crayon.png" id="1_eqd2m"]
+[ext_resource type="Script" uid="uid://bpj38pmnumakl" path="res://scenes/Assets/platform_crayon.gd" id="1_iqejp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_buby2"]
 size = Vector2(260.69724, 55.996143)
@@ -9,6 +10,7 @@ size = Vector2(260.69724, 55.996143)
 size = Vector2(49, 26)
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=2114704477]
+script = ExtResource("1_iqejp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=665162789]
 position = Vector2(-1, -1)

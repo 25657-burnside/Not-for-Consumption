@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://d34lyp48sdnmx"]
 
+[ext_resource type="Script" uid="uid://bpj38pmnumakl" path="res://scenes/Assets/platform_crayon.gd" id="1_dlcqh"]
 [ext_resource type="Texture2D" uid="uid://crg5kdft284v7" path="res://sprites/Digitech Asset Crayon.png" id="1_hhaal"]
 [ext_resource type="Texture2D" uid="uid://bgb7rgutjhc7f" path="res://sprites/Digitech Asset Lolly.png" id="2_dlcqh"]
 
@@ -15,6 +16,7 @@ radius = 55.15855
 [node name="StaticBody2D" type="StaticBody2D" unique_id=2114704477]
 position = Vector2(3, 0)
 scale = Vector2(0.82228863, 0.89633954)
+script = ExtResource("1_dlcqh")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=665162789]
 position = Vector2(-41.942616, 1.7453308)

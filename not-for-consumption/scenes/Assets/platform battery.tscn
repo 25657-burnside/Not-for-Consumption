@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://bjunrtrep7gep"]
 
 [ext_resource type="Texture2D" uid="uid://ite7p5aeuej2" path="res://sprites/Digitech Asset Battery.png" id="1_vv2ke"]
+[ext_resource type="Script" uid="uid://bpj38pmnumakl" path="res://scenes/Assets/platform_crayon.gd" id="2_tccqt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tccqt"]
-size = Vector2(62.886692, 210.3756)
+size = Vector2(62.886692, 211.11423)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vv2ke"]
+size = Vector2(34.794895, 52.4355)
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=2114704477]
 scale = Vector2(0.82228863, 0.89633954)
+script = ExtResource("2_tccqt")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=665162789]
 position = Vector2(-13.55038, -75.56725)
@@ -15,6 +20,10 @@ scale = Vector2(0.1373728, 0.13648218)
 texture = ExtResource("1_vv2ke")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2035501685]
-position = Vector2(-23.106245, -74.74847)
+position = Vector2(-22.769745, -74.90065)
 rotation = 1.1460724
 shape = SubResource("RectangleShape2D_tccqt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1392012686]
+position = Vector2(76.24364, -121.04787)
+shape = SubResource("RectangleShape2D_vv2ke")

@@ -8,6 +8,7 @@
 size = Vector2(224, 64)
 
 [node name="Area2D" type="Area2D" unique_id=230328529]
+scale = Vector2(1.0812875, 1.3260643)
 script = ExtResource("1_y301w")
 metadata/_edit_horizontal_guides_ = [-88.0]
 
@@ -16,13 +17,13 @@ position = Vector2(-8, 80.000015)
 scale = Vector2(0.21581393, 0.3550061)
 texture = ExtResource("2_je4rr")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1037941945]
-position = Vector2(-8, 184)
-shape = SubResource("RectangleShape2D_6b83p")
-
 [node name="SquarePng" type="Sprite2D" parent="." unique_id=573479245]
 position = Vector2(-8.00001, 584)
 scale = Vector2(0.43557167, 1)
 texture = ExtResource("3_j1ovk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1037941945]
+position = Vector2(-7.398587, 434.36804)
+shape = SubResource("RectangleShape2D_6b83p")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

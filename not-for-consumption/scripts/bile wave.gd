@@ -9,6 +9,9 @@ var risespeed = 70
 
 # The exact Y coordinate where you want it to stop
 var target_y = 470.0
+
+
+
 func _process(delta):
 	# Move horizontally across the screen
 	position.y = move_toward(position.y, target_y, speed * delta)
