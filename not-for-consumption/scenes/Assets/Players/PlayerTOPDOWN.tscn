@@ -22,3 +22,5 @@ position = Vector2(0, -8)
 zoom = Vector2(2.1, 2.1)
 position_smoothing_enabled = true
 position_smoothing_speed = 5.585
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1517216736]

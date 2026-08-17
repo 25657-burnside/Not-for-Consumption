@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dutbs80jd4560"]
+
+[ext_resource type="Script" uid="uid://5ldjb2qkrlap" path="res://scripts/Character Scripts/PlayerTOPDOWN.gd" id="1_da40t"]
+[ext_resource type="Texture2D" uid="uid://bbkamoq2iaqo8" path="res://sprites/11DGT background Level 4.png" id="2_24eqv"]
+
+[node name="PlayerTOPDOWN" type="CharacterBody2D" unique_id=146099960]
+script = ExtResource("1_da40t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=193813488]
+position = Vector2(0, -7.9999895)
+scale = Vector2(0.18592298, 0.24691357)
+texture = ExtResource("2_24eqv")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1465953030]
+position = Vector2(0, -8)
+zoom = Vector2(2.1, 2.1)
+position_smoothing_enabled = true
+position_smoothing_speed = 5.585

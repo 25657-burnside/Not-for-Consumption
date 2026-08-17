@@ -63,7 +63,6 @@ sources/0 = SubResource("TileSetAtlasSource_g87e0")
 script = ExtResource("1_augtw")
 
 [node name="PlayerTOPDOWN" parent="." unique_id=146099960 instance=ExtResource("2_2bgbl")]
-position = Vector2(672, 104)
 
 [node name="TileMap2" parent="." unique_id=139295078 instance=ExtResource("2_augtw")]
 position = Vector2(445.27295, 980.11365)

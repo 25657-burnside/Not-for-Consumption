@@ -2,8 +2,11 @@
 
 [ext_resource type="Script" uid="uid://dorresuj45f8b" path="res://scripts/level_3.gd" id="1_c6eld"]
 [ext_resource type="PackedScene" uid="uid://bbrodeajuqaqj" path="res://scenes/Assets/portals/portal 3.tscn" id="3_3vrfu"]
+[ext_resource type="Texture2D" uid="uid://vorgtcyoyesn" path="res://sprites/11DGT background Level 3.png" id="3_5d4o2"]
 [ext_resource type="PackedScene" uid="uid://cx4veea682oa7" path="res://scenes/Assets/Players/player3.tscn" id="3_c6eld"]
+[ext_resource type="Texture2D" uid="uid://bk8wwkkdon1en" path="res://sprites/11DGT background Level 3 2.png" id="4_tpbas"]
 [ext_resource type="PackedScene" uid="uid://bkcn3w61ei88w" path="res://scenes/Assets/bile wave.tscn" id="4_y5r85"]
+[ext_resource type="Texture2D" uid="uid://cneq0qxojewj0" path="res://sprites/11DGT background Level 3 3.png" id="5_6vyoq"]
 [ext_resource type="PackedScene" uid="uid://ckqdbmy1ayj4s" path="res://scenes/Assets/jump_pad.tscn" id="6_jximb"]
 [ext_resource type="Texture2D" uid="uid://bspbn2qy7i6fw" path="res://sprites/acidlake.png" id="7_6tvbe"]
 [ext_resource type="Texture2D" uid="uid://b0sxdeydh0xmh" path="res://sprites/tilemap 2.png" id="8_3bd76"]
@@ -17,7 +20,7 @@
 [ext_resource type="Script" uid="uid://dp3aynis0mc3h" path="res://scenes/Levels/acidlake.gd" id="14_mo57s"]
 [ext_resource type="Texture2D" uid="uid://dudnpn0c6lmri" path="res://sprites/Untitled.png" id="15_8us2r"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kcwu1"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mo57s"]
 texture = ExtResource("8_3bd76")
 texture_region_size = Vector2i(370, 370)
 1:1/0 = 0
@@ -69,14 +72,38 @@ texture_region_size = Vector2i(370, 370)
 [sub_resource type="TileSet" id="TileSet_pjds8"]
 tile_size = Vector2i(370, 370)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_kcwu1")
+sources/0 = SubResource("TileSetAtlasSource_mo57s")
 
 [node name="Node2D" type="Node2D" unique_id=674097940]
 script = ExtResource("1_c6eld")
 bullet_scene = ExtResource("4_y5r85")
 
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1013585780]
+scroll_scale = Vector2(0.2, 1)
+repeat_size = Vector2(3012, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=522503563]
+position = Vector2(1445, 454)
+texture = ExtResource("3_5d4o2")
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=323100249]
+scroll_scale = Vector2(0.419, 1)
+repeat_size = Vector2(3012, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=529839431]
+position = Vector2(1427, 149)
+texture = ExtResource("4_tpbas")
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=328315980]
+scroll_scale = Vector2(0.8, 1)
+repeat_size = Vector2(3012, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=2113849666]
+position = Vector2(1466, 91)
+texture = ExtResource("5_6vyoq")
+
 [node name="player2" parent="." unique_id=453147879 instance=ExtResource("3_c6eld")]
-position = Vector2(87, 466)
+position = Vector2(31, -548)
 
 [node name="Timer" type="Timer" parent="." unique_id=981103953]
 wait_time = 6.433000000000001
@@ -178,7 +205,6 @@ texture = ExtResource("7_6tvbe")
 script = ExtResource("14_mo57s")
 
 [node name="Untitled" type="Sprite2D" parent="." unique_id=1998249683]
-visible = false
 position = Vector2(28.813684, -266.95468)
 rotation = 3.1415927
 scale = Vector2(0.19072318, 0.7639471)
