@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://5ldjb2qkrlap" path="res://scripts/Character Scripts/PlayerTOPDOWN.gd" id="1_klau0"]
 [ext_resource type="Texture2D" uid="uid://51xnmc8k6lnt" path="res://sprites/icon.svg" id="2_134c8"]
+[ext_resource type="Texture2D" uid="uid://bbkamoq2iaqo8" path="res://sprites/11DGT background Level 4.png" id="2_h2nui"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gbbil"]
 size = Vector2(48, 48)
@@ -24,3 +25,4 @@ position_smoothing_enabled = true
 position_smoothing_speed = 5.585
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1517216736]
+texture = ExtResource("2_h2nui")
