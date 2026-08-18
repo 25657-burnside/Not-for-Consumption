@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://pw02vhrbtwwn"]
+
+[ext_resource type="Script" uid="uid://b2pluw3c8f05g" path="res://canvas_layer.gd" id="1_37rai"]
+[ext_resource type="Texture2D" uid="uid://bbkamoq2iaqo8" path="res://sprites/11DGT background Level 4.png" id="1_v2lfg"]
+[ext_resource type="Texture2D" uid="uid://v5b1p4w7t6bm" path="res://sprites/game start button.PNG" id="2_0qrqu"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=844978766]
+script = ExtResource("1_37rai")
+
+[node name="Button" type="Button" parent="." unique_id=487812416]
+offset_left = 136.0
+offset_top = 264.0
+offset_right = 328.0
+offset_bottom = 352.0
+icon = ExtResource("2_0qrqu")
+expand_icon = true
+
+[node name="Button2" type="Button" parent="." unique_id=519450537]
+offset_left = 136.0
+offset_top = 368.0
+offset_right = 328.0
+offset_bottom = 456.0
+text = "QUIT"
+icon = ExtResource("1_v2lfg")
+autowrap_trim_flags = 0
+expand_icon = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
