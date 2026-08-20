@@ -4,4 +4,4 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "player":
 		print("level change")
-		TransitionscreenBlack.transition_to("res://level_2.tscn")
+		TransitionscreenBlack.transition_to("res://scenes/Levels/Level 2.tscn")

@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bs0ti2xwqkf5h" path="res://scenes/Assets/tile_map_2.tscn" id="2_augtw"]
 [ext_resource type="Texture2D" uid="uid://bbkamoq2iaqo8" path="res://sprites/11DGT background Level 4.png" id="2_g87e0"]
 [ext_resource type="Texture2D" uid="uid://b0sxdeydh0xmh" path="res://sprites/tilemap 2.png" id="4_vcac1"]
+[ext_resource type="PackedScene" uid="uid://c2j6hk32u14bf" path="res://scenes/Assets/portals/portal_4.tscn" id="6_xbj4b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g87e0"]
 texture = ExtResource("4_vcac1")
@@ -80,6 +81,7 @@ offset_bottom = 638.3286
 color = Color(0.3372549, 0.07058824, 0.46666667, 0.16862746)
 
 [node name="TileMap2" parent="." unique_id=139295078 instance=ExtResource("2_augtw")]
+visible = false
 position = Vector2(445.27295, 980.11365)
 layer_0/tile_data = PackedInt32Array(-983036, 65536, 1, -917500, 65536, 1, -851964, 65536, 1, -786428, 65536, 1, -720892, 65536, 1, -851965, 65536, 1, -851966, 65536, 1, -851967, 65536, 1, -851968, 65536, 1, -917506, 65536, 1, -851970, 65536, 1, -786434, 65536, 1, -720898, 65536, 1, -655362, 65536, 1, -589826, 65536, 1, -720896, 65536, 1, -655360, 65536, 1, -589824, 65536, 1, -524288, 65536, 1610612737, -720895, 65536, 1, -720894, 65536, 1, -589818, 65536, 1610612737, -655354, 65536, 1610612737, -720890, 65536, 1610612737, -786426, 65536, 1610612737, -851962, 65536, 1610612737, -917498, 65536, 1610612737, -983034, 65536, 1610612737, -983042, 65536, 1610612737, -983041, 65536, 1610612737, -1048576, 65536, 1610612737, -1048575, 65536, 1610612737, -1048574, 65536, 1610612737, -1048573, 65536, 1610612737, -1048572, 65536, 1610612737, -1048571, 65536, 1610612737, -1048570, 65536, 1610612737, -458754, 65536, 1610612737, -458753, 65536, 1610612737, -524287, 65536, 1610612737, -524286, 65536, 1610612737, -524285, 65536, 1610612737, -524284, 65536, 1610612737, -524283, 65536, 1610612737, -524282, 65536, 1610612737, -524290, 65536, 1610612737, -983040, 65536, 1610612737, -917502, 65536, 1610612737, -655356, 65536, 1610612737, -655358, 65536, 1610612737)
 
@@ -89,3 +91,7 @@ tile_map_data = PackedByteArray("AAD+//7/AAACAAIAAAD///7/AAACAAIAAAAAAP7/AAACAAI
 tile_set = SubResource("TileSet_xbj4b")
 
 [node name="PlayerTOPDOWN" parent="." unique_id=146099960 instance=ExtResource("2_2bgbl")]
+position = Vector2(416, 1616)
+
+[node name="Area2D" parent="." unique_id=1145825145 instance=ExtResource("6_xbj4b")]
+position = Vector2(416, 1696)

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c2j6hk32u14bf"]
 
 [ext_resource type="Script" uid="uid://dc8rcjyirvqbb" path="res://scripts/Portal Scripts/portal_4.gd" id="1_dpakt"]
-[ext_resource type="Texture2D" uid="uid://p2ee6nwjnl3e" path="res://sprites/New Piskel.png" id="2_muq8n"]
+[ext_resource type="Texture2D" uid="uid://c4uekqltu82l0" path="res://sprites/square-png.webp" id="2_0c1ki"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qvyej"]
 size = Vector2(64, 64)
@@ -10,7 +10,9 @@ size = Vector2(64, 64)
 script = ExtResource("1_dpakt")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1513436813]
-texture = ExtResource("2_muq8n")
+position = Vector2(7.6293945e-06, 2.861023e-06)
+scale = Vector2(0.11615244, 0.11615245)
+texture = ExtResource("2_0c1ki")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1617778381]
 shape = SubResource("RectangleShape2D_qvyej")

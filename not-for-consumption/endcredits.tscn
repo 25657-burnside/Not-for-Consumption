@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://e8xiikgvp8ww"]
+
+[ext_resource type="Script" uid="uid://bcs6klllt5blv" path="res://endcredits.gd" id="1_2ino0"]
+[ext_resource type="Texture2D" uid="uid://bbkamoq2iaqo8" path="res://sprites/11DGT background Level 4.png" id="1_4po4e"]
+
+[node name="Node2D" type="Node2D" unique_id=531777080]
+script = ExtResource("1_2ino0")
+
+[node name="Button2" type="Button" parent="." unique_id=1754987828]
+offset_left = 416.0
+offset_top = 312.0
+offset_right = 608.0
+offset_bottom = 400.0
+text = "QUIT"
+icon = ExtResource("1_4po4e")
+autowrap_trim_flags = 0
+expand_icon = true
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
