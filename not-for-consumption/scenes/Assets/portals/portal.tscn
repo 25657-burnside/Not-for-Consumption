@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dlte07gu70b40" path="res://scripts/Portal Scripts/portal.gd" id="1_2bavj"]
 [ext_resource type="Texture2D" uid="uid://dudnpn0c6lmri" path="res://sprites/Untitled.png" id="2_46edp"]
+[ext_resource type="Texture2D" uid="uid://c4uekqltu82l0" path="res://sprites/square-png.webp" id="3_kh2xg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yypjn"]
 size = Vector2(208, 48)
@@ -10,12 +11,17 @@ size = Vector2(208, 48)
 script = ExtResource("1_2bavj")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1545500507]
-position = Vector2(40, -343.99994)
-scale = Vector2(0.19348839, 0.6837607)
+position = Vector2(40, -15.999939)
+scale = Vector2(0.19348839, 0.28327233)
 texture = ExtResource("2_46edp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1409850592]
 position = Vector2(40, 104)
 shape = SubResource("RectangleShape2D_yypjn")
+
+[node name="SquarePng" type="Sprite2D" parent="." unique_id=820883758]
+position = Vector2(40, 472)
+scale = Vector2(0.40653357, 1)
+texture = ExtResource("3_kh2xg")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

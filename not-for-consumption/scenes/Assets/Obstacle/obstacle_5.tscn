@@ -21,7 +21,7 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group(\"player\"):
 		# This deletes the player from the game. 
 		# (Later, you can change this to trigger a game over screen instead!)
-		get_tree().reload_current_scene()
+		TransitionScreen.transition_to(\"res://scenes/Levels/Level 2.tscn\")
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]

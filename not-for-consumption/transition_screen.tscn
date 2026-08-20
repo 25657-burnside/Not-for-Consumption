@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://qnq1vki6eueo"]
+
+[ext_resource type="Script" uid="uid://dg0sjvhctsk45" path="res://transition_screen.gd" id="1_57neh"]
+
+[node name="TransitionScreen" type="CanvasLayer" unique_id=1315772330]
+script = ExtResource("1_57neh")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=416260932]
+offset_right = 1160.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0.3231942, 0.09737163, 0.18373406, 1)

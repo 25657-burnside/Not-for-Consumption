@@ -19,7 +19,7 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group(\"player\"):
 		# This deletes the player from the game. 
 		# (Later, you can change this to trigger a game over screen instead!)
-		get_tree().reload_current_scene()
+		TransitionScreen.transition_to(\"res://scenes/Levels/Level 2.tscn\")
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]
@@ -30,7 +30,7 @@ script = SubResource("GDScript_fwrey")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1109688378]
 position = Vector2(96, -96)
-rotation = -0.5403877499999999
+rotation = -0.54038775
 scale = Vector2(1.6733828, 0.3125)
 texture = ExtResource("1_ap5r0")
 
@@ -42,7 +42,7 @@ texture = ExtResource("1_ap5r0")
 
 [node name="Collioson" type="CollisionShape2D" parent="." unique_id=1052718494]
 position = Vector2(96, -96)
-rotation = -0.5403877499999999
+rotation = -0.54038775
 shape = SubResource("RectangleShape2D_tyhon")
 
 [node name="Collioson2" type="CollisionShape2D" parent="." unique_id=1797686715]

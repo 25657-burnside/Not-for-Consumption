@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="Not for Consumption"
-run/main_scene="uid://bd4al04vgtjen"
+run/main_scene="uid://pw02vhrbtwwn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://sprites/icon.svg"
+
+[autoload]
+
+TransitionScreen="*uid://qnq1vki6eueo"
+TransitionscreenBlack="*uid://bncfngkr2j840"
 
 [file_customization]
 

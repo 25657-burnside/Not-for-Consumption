@@ -12,33 +12,6 @@
 [ext_resource type="PackedScene" uid="uid://q20i8ilph7uf" path="res://scenes/Assets/Obstacle/falling_block var 4.tscn" id="7_hyu7u"]
 [ext_resource type="Texture2D" uid="uid://b0sxdeydh0xmh" path="res://sprites/tilemap 2.png" id="8_t5k8b"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnb2c"]
-texture = ExtResource("3_hispy")
-texture_region_size = Vector2i(64, 64)
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-1:0/0 = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-2:0/0 = 0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-2:1/0 = 0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-0:2/0 = 0
-0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-1:2/0 = 0
-1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-2:2/0 = 0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-
-[sub_resource type="TileSet" id="TileSet_h8v3o"]
-tile_size = Vector2i(64, 64)
-physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_tnb2c")
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hispy"]
 texture = ExtResource("8_t5k8b")
 texture_region_size = Vector2i(370, 370)
@@ -12215,7 +12188,39 @@ tile_size = Vector2i(370, 370)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_hispy")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnb2c"]
+texture = ExtResource("3_hispy")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="TileSet" id="TileSet_h8v3o"]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_tnb2c")
+
 [node name="Level 1" type="Node2D" unique_id=403267996]
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=305742232]
+scale = Vector2(0.173, 0.173)
+tile_map_data = PackedByteArray("AAAkAAsAAAAHAAMAAAAlAAsAAAAHAAMAAAAmAAsAAAAHAAMAAAA=")
+tile_set = SubResource("TileSet_4ekgt")
 
 [node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1190372749]
 scroll_scale = Vector2(0.2, 1)
@@ -12251,7 +12256,7 @@ texture = ExtResource("3_4ekgt")
 position = Vector2(-984, 480)
 
 [node name="Portal" parent="." unique_id=1477204429 instance=ExtResource("3_vj6it")]
-position = Vector2(2360, 1128)
+position = Vector2(2360, 552)
 
 [node name="Layer0" type="TileMapLayer" parent="." unique_id=1544318738]
 visible = false
@@ -12262,11 +12267,11 @@ tile_set = SubResource("TileSet_h8v3o")
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1545987752]
 position = Vector2(-128, -64)
 
-[node name="FallingBlock20" parent="." unique_id=101544614 instance=ExtResource("5_tnb2c")]
-position = Vector2(-871, 166)
-
 [node name="FallingBlock14" parent="." unique_id=800604763 instance=ExtResource("6_hyu7u")]
 position = Vector2(-675, 159)
+
+[node name="FallingBlock19" parent="." unique_id=168973367 instance=ExtResource("6_hyu7u")]
+position = Vector2(-872, 184)
 
 [node name="FallingBlock13" parent="." unique_id=61187185 instance=ExtResource("5_tnb2c")]
 position = Vector2(-611, 167)
@@ -12289,7 +12294,7 @@ position = Vector2(-40, 165)
 [node name="FallingBlock10" parent="." unique_id=234485908 instance=ExtResource("7_hyu7u")]
 position = Vector2(157, 159)
 
-[node name="FallingBlock7" parent="." unique_id=168973367 instance=ExtResource("6_hyu7u")]
+[node name="FallingBlock7" parent="." unique_id=789232900 instance=ExtResource("6_hyu7u")]
 position = Vector2(285, 159)
 
 [node name="FallingBlock" parent="." unique_id=343524498 instance=ExtResource("5_tnb2c")]

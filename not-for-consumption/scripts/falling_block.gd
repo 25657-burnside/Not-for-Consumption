@@ -42,9 +42,9 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 			body.process_mode = Node.PROCESS_MODE_DISABLED
 			
 			# 3. Wait for 2.0 seconds
-			await get_tree().create_timer(2.0).timeout
+			await get_tree().create_timer(1.0).timeout
 			
 			# 4. Reload the scene
-			get_tree().reload_current_scene()
+			TransitionScreen.transition_to("res://scenes/Levels/Level 1.tscn")
 
 #Check gemini for the last message and add that
